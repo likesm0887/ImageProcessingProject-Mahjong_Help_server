@@ -62,7 +62,7 @@ public class main
                 in = new java.io.ObjectInputStream(socket.getInputStream());
                 try {
                     SendObject data = (SendObject)in.readObject();
-                    //byte2image(data.imgByte,"server.bmp");
+                    byte2image(data.imgByte,"server.bmp");
                     Image image = Toolkit.getDefaultToolkit().getImage("server.bmp");
                     imageMat = cutup.cutImage(image,1,Integer.parseInt(data.divnum));
                     matListToImage(imageMat);
