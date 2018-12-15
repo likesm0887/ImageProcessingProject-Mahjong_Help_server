@@ -5,6 +5,6 @@ import java.util.List;
 public interface  IMajong
 {
 
-    public void getListen();
+    public List<String> getListen();
     public void input(List<String> s);
 }

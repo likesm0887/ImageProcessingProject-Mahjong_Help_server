@@ -10,6 +10,7 @@ import java.util.ArrayList;
 
 public class Cutup {
     private  int temp=0;
+
     private ArrayList<Mat> imageMat = new ArrayList<Mat>();
     public Cutup() throws IOException {
     }
@@ -51,9 +52,10 @@ public class Cutup {
                 ImageFilter filter = new CropImageFilter(x + j * changeX, y + i * changeY, cutWidth, cutHeight);
 
                 images[i][j] = Toolkit.getDefaultToolkit().createImage(new FilteredImageSource(image.getSource(), filter));
-                imgToMat(images);
+
             }
         }
+        imgToMat(images);
         return imageMat;
     }
 }
