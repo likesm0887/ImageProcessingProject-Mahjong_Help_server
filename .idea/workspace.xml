@@ -7,22 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="318387db-3577-470e-b06d-c980572698a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/data/MahjongCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mahjongFactory/MahjongFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/processUtility/ImagePathToMat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MahjongFactory/MahjongFactoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mahjong/mahjing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/data/Sample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/data/SampleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MatImage0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/MatImage0.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/server.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mahjong/IMajong.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mahjong/IMajong.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mahjong/majing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mahjong/majing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/processUtility/Cutup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/processUtility/Cutup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mahjong/IMajong.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mahjong/IMajong.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mahjong/majing.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mahjong/majing.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/processUtility/Cutup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/processUtility/Cutup.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -52,25 +39,25 @@
         <counts>
           <entry key="JPG" value="2" />
           <entry key="bmp" value="2" />
-          <entry key="java" value="36" />
+          <entry key="java" value="38" />
           <entry key="jpg" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="28" />
-          <entry key="JAVA" value="36" />
+          <entry key="JAVA" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="12" />
-          <entry key="java" value="3190" />
+          <entry key="java" value="3601" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3190" />
+          <entry key="JAVA" value="3601" />
           <entry key="PLAIN_TEXT" value="12" />
         </counts>
       </usages-collector>
@@ -103,7 +90,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/mahjongFactory/MahjongFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="321">
-              <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+              <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#167#168#0" expanded="true" />
@@ -113,11 +100,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/MahjongFactory/MahjongFactoryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            <state relative-caret-position="265">
+              <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#324#325#0" expanded="true" />
@@ -127,26 +114,33 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/4s.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/4s2.JPG">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/processUtility/Cutup.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/data/Sample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-343">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="360">
+              <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/data/SampleTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" column="76" lean-forward="true" selection-start-line="14" selection-start-column="76" selection-end-line="14" selection-end-column="76" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/4s2.JPG">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -171,15 +165,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/Downloads/opencv/build/java/opencv-2413.jar!/org/opencv/highgui/Highgui.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="368" selection-start-line="368" selection-end-line="368" />
             </state>
           </provider>
         </entry>
@@ -237,6 +222,8 @@
         <option value="$PROJECT_DIR$/src/test/java/MahjongFactory/MahjongTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/processUtility/ImagePathToMat.java" />
         <option value="$PROJECT_DIR$/src/test/java/MahjongFactory/MahjongFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/data/SampleTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/data/Sample.java" />
       </list>
     </option>
   </component>
@@ -246,7 +233,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="495" />
     <option name="y" value="85" />
     <option name="width" value="1036" />
@@ -343,6 +330,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MahJong_Help_Server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MahJong_Help_Server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mahjong" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -364,7 +359,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544845461739" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544856891098" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Mahjong_HelpV1" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -393,7 +388,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MahjongFactoryTest">
+  <component name="RunManager" selected="JUnit.SampleTest">
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main" />
       <module name="MahJong_Help_Server" />
@@ -411,6 +406,20 @@
       </extension>
       <option name="PACKAGE_NAME" value="MahjongFactory" />
       <option name="MAIN_CLASS_NAME" value="MahjongFactory.MahjongFactoryTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SampleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MahJong_Help_Server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="data" />
+      <option name="MAIN_CLASS_NAME" value="data.SampleTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -433,9 +442,11 @@
       <item itemvalue="Application.main" />
       <item itemvalue="JUnit.mahjing" />
       <item itemvalue="JUnit.MahjongFactoryTest" />
+      <item itemvalue="JUnit.SampleTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SampleTest" />
         <item itemvalue="JUnit.MahjongFactoryTest" />
         <item itemvalue="JUnit.mahjing" />
         <item itemvalue="Application.main" />
@@ -454,47 +465,47 @@
       <updated>1544334132671</updated>
       <workItem from="1544334136847" duration="37715000" />
       <workItem from="1544691881439" duration="7570000" />
-      <workItem from="1544802571386" duration="9434000" />
+      <workItem from="1544802571386" duration="15229000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="mahjing - 2018.12.15 at 10h 38m 45s.xml">
-      <configuration name="mahjing" configurationId="JUnit" />
+    <history-entry file="SampleTest - 2018.12.15 at 13h 28m 14s.xml">
+      <configuration name="SampleTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="mahjing - 2018.12.15 at 10h 40m 37s.xml">
-      <configuration name="mahjing" configurationId="JUnit" />
+    <history-entry file="SampleTest - 2018.12.15 at 13h 28m 47s.xml">
+      <configuration name="SampleTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="mahjing - 2018.12.15 at 10h 40m 56s.xml">
-      <configuration name="mahjing" configurationId="JUnit" />
+    <history-entry file="SampleTest - 2018.12.15 at 13h 29m 37s.xml">
+      <configuration name="SampleTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="mahjing - 2018.12.15 at 10h 41m 05s.xml">
-      <configuration name="mahjing" configurationId="JUnit" />
+    <history-entry file="SampleTest - 2018.12.15 at 14h 12m 16s.xml">
+      <configuration name="SampleTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="mahjing - 2018.12.15 at 10h 42m 01s.xml">
-      <configuration name="mahjing" configurationId="JUnit" />
+    <history-entry file="SampleTest - 2018.12.15 at 14h 13m 46s.xml">
+      <configuration name="SampleTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MahjongFactoryTest - 2018.12.15 at 11h 38m 32s.xml">
-      <configuration name="MahjongFactoryTest" configurationId="JUnit" />
+    <history-entry file="SampleTest - 2018.12.15 at 14h 13m 57s.xml">
+      <configuration name="SampleTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MahjongFactoryTest - 2018.12.15 at 11h 39m 02s.xml">
-      <configuration name="MahjongFactoryTest" configurationId="JUnit" />
+    <history-entry file="SampleTest - 2018.12.15 at 14h 14m 54s.xml">
+      <configuration name="SampleTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MahjongFactoryTest - 2018.12.15 at 11h 39m 54s.xml">
-      <configuration name="MahjongFactoryTest" configurationId="JUnit" />
+    <history-entry file="SampleTest - 2018.12.15 at 14h 15m 06s.xml">
+      <configuration name="SampleTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MahjongFactoryTest - 2018.12.15 at 11h 41m 33s.xml">
-      <configuration name="MahjongFactoryTest" configurationId="JUnit" />
+    <history-entry file="SampleTest - 2018.12.15 at 14h 17m 23s.xml">
+      <configuration name="SampleTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MahjongFactoryTest - 2018.12.15 at 11h 42m 19s.xml">
-      <configuration name="MahjongFactoryTest" configurationId="JUnit" />
+    <history-entry file="SampleTest - 2018.12.15 at 14h 17m 42s.xml">
+      <configuration name="SampleTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54719000" />
+    <option name="totallyTimeSpent" value="60514000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24733475" />
@@ -799,13 +810,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/data/MahjongCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Downloads/opencv/build/java/opencv-2413.jar!/org/opencv/highgui/Highgui.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -823,6 +827,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/MahjongFactory/MahjongFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/mahjong/mahjing.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -833,10 +849,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/data/MahjongCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mahjongFactory/MahjongFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
-          <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#167#168#0" expanded="true" />
@@ -845,14 +868,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MahjongFactory/MahjongFactoryTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/data/SampleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        <state relative-caret-position="266">
+          <caret line="14" column="76" lean-forward="true" selection-start-line="14" selection-start-column="76" selection-end-line="14" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#324#325#0" expanded="true" />
-            <element signature="e#384#385#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/data/Sample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
