@@ -16,6 +16,7 @@ import java.util.List;
 public class HandCard {
     private final String compareStrategyOption ="";
     private ArrayList<MahjongCard>handCard;
+    private ArrayList<Mat>handCardPic;
     private Sample sample;
     private ArrayList<String> handCardByString;
     private CompareStrategy compareStrategy ;
@@ -23,9 +24,10 @@ public class HandCard {
     public HandCard(Image img, int divnum) throws IOException
     {
         Cutup cutup =new Cutup();
-        cutup.cutImage(img,1,divnum);
+
         compareStrategy =new FindFeaturePointStrategy();
         mf=new MahjongFactory();
+        handCardPic=cutup.cutImage(img,1,divnum);
         sample=new Sample();
         handCardCompareToSample();
     }
@@ -40,11 +42,11 @@ public class HandCard {
     }
     private void handCardCompareToSample()
     {
-        for (int i =0 ;i<handCard.size();i++)
+        for (int i =0 ;i<handCardPic.size();i++)
         {
             for(int j =0 ;j<sample.mahjongCardsSample.size();j++)
             {
-                if(compareStrategy.compare(handCard.get(i).pic, sample.mahjongCardsSample.get(i).pic))
+                if(compareStrategy.compare(handCardPic.get(i), sample.mahjongCardsSample.get(i).pic))
                 {
                     handCard.add(mf.create(sample.mahjongCardsSample.get(i).value,sample.mahjongCardsSample.get(i).pic));
                     handCardByString.add( sample.mahjongCardsSample.get(i).value);

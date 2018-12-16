@@ -15,5 +15,8 @@ public class SampleTest {
     public void sampleReadTest() throws IOException {
        Sample sample =new Sample();
        assertEquals(sample.mahjongCardsSample.get(0).chineseValue,"1條");
+       assertEquals(sample.mahjongCardsSample.get(1).chineseValue,"2條");
+       assertEquals(sample.mahjongCardsSample.get(33).chineseValue,"白");
+        assertEquals(sample.mahjongCardsSample.get(1).value,"2T");
     }
 }

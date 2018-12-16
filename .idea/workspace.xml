@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/data/Sample.java" line="44" />
+  </component>
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
@@ -7,18 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="318387db-3577-470e-b06d-c980572698a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/data/HandCardTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/test_data/server.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sample.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/compare/CompareStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compare/CompareStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/compare/FindFeaturePointStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compare/FindFeaturePointStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/compare/MatchTempleteStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compare/MatchTempleteStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/data/HandCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/HandCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/MahjongCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/MahjongCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/Sample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Sample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mahjong/majing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mahjong/majing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mahjongFactory/MahjongFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mahjongFactory/MahjongFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/data/SampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/data/SampleTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -51,7 +43,7 @@
           <entry key="JPG" value="16" />
           <entry key="bmp" value="6" />
           <entry key="class" value="3" />
-          <entry key="java" value="86" />
+          <entry key="java" value="88" />
           <entry key="jpg" value="167" />
           <entry key="txt" value="1" />
         </counts>
@@ -60,19 +52,19 @@
         <counts>
           <entry key="CLASS" value="3" />
           <entry key="Image" value="189" />
-          <entry key="JAVA" value="86" />
+          <entry key="JAVA" value="88" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="12" />
-          <entry key="java" value="5492" />
+          <entry key="java" value="5568" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5492" />
+          <entry key="JAVA" value="5568" />
           <entry key="PLAIN_TEXT" value="12" />
         </counts>
       </usages-collector>
@@ -82,14 +74,23 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/data/HandCard.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="189">
-                  <caret line="42" selection-start-line="42" selection-end-line="42" />
+                <state relative-caret-position="398">
+                  <caret line="59" column="39" lean-forward="true" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="39" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/processUtility/Cutup.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="302">
+                  <caret line="30" selection-start-line="30" selection-end-line="30" />
                 </state>
               </provider>
             </entry>
@@ -102,8 +103,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/processUtility/ImgToBufImg.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="313">
-                  <caret line="28" selection-start-line="28" selection-end-line="28" />
+                <state relative-caret-position="161">
+                  <caret line="20" selection-start-line="20" selection-end-line="20" />
                 </state>
               </provider>
             </entry>
@@ -111,17 +112,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/data/MahjongCard.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
+                <state relative-caret-position="585">
                   <caret line="50" selection-start-line="50" selection-end-line="50" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/data/Sample.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="44" column="63" selection-start-line="44" selection-start-column="63" selection-end-line="44" selection-end-column="63" />
+                <state relative-caret-position="413">
+                  <caret line="50" selection-start-line="50" selection-end-line="50" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -132,8 +133,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/processUtility/ImagePathToMat.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="266">
-                  <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+                <state relative-caret-position="285">
+                  <caret line="15" selection-start-line="15" selection-end-line="15" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -185,7 +186,7 @@
             <entry file="file://$PROJECT_DIR$/src/test/java/matchTest.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="399">
-                  <caret line="21" column="97" lean-forward="true" selection-start-line="21" selection-start-column="97" selection-end-line="21" selection-end-column="97" />
+                  <caret line="21" column="97" selection-start-line="21" selection-start-column="97" selection-end-line="21" selection-end-column="97" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -196,8 +197,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/data/HandCardTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="342">
-                  <caret line="18" column="57" lean-forward="true" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+                <state relative-caret-position="323">
+                  <caret line="17" selection-start-line="17" selection-end-line="17" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -215,11 +216,23 @@
               <provider selected="true" editor-type-id="images" />
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/data/SampleTest.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="342">
-                  <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+                  <caret line="18" column="72" lean-forward="true" selection-start-line="18" selection-start-column="72" selection-end-line="18" selection-end-column="72" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="662">
+                  <caret line="64" column="58" selection-start-line="64" selection-start-column="58" selection-end-line="64" selection-end-column="58" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -228,12 +241,13 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/compare/FindFeaturePointStrategy.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="263">
-                  <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="85" />
+                <state relative-caret-position="189">
+                  <caret line="34" selection-start-line="34" selection-end-line="34" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                    <element signature="e#963#964#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -299,14 +313,14 @@
         <option value="$PROJECT_DIR$/src/test/java/matchTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/compare/CompareStrategy.java" />
         <option value="$PROJECT_DIR$/src/main/java/compare/MatchTempleteStrategy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/data/HandCard.java" />
         <option value="$PROJECT_DIR$/src/main/java/mahjong/majing.java" />
         <option value="$PROJECT_DIR$/src/main/java/compare/FindFeaturePointStrategy.java" />
         <option value="$PROJECT_DIR$/src/test/java/data/HandCardTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/data/MahjongCard.java" />
         <option value="$PROJECT_DIR$/src/main/java/mahjongFactory/MahjongFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/data/SampleTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/data/Sample.java" />
+        <option value="$PROJECT_DIR$/src/test/java/data/SampleTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/data/HandCard.java" />
       </list>
     </option>
   </component>
@@ -433,7 +447,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544948134650" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544949038432" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Mahjong_HelpV1" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -463,7 +477,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SampleTest">
+  <component name="RunManager" selected="JUnit.HandCardTest.handCardCompareToSampleTest">
+    <configuration name="All in MahJong_Help_Server" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MahJong_Help_Server" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HandCardTest.handCardCompareToSampleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MahJong_Help_Server" />
       <extension name="coverage">
@@ -526,30 +548,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="matchTest.TestMatch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MahJong_Help_Server" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="matchTest" />
-      <option name="METHOD_NAME" value="TestMatch" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="JUnit.matchTest.TestMatch" />
       <item itemvalue="JUnit.mahjing.TestSerach" />
       <item itemvalue="JUnit.HandCardTest.handCardCompareToSampleTest" />
       <item itemvalue="JUnit.SampleTest.sampleReadTest" />
       <item itemvalue="JUnit.SampleTest" />
+      <item itemvalue="JUnit.All in MahJong_Help_Server" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SampleTest" />
-        <item itemvalue="JUnit.SampleTest.sampleReadTest" />
         <item itemvalue="JUnit.HandCardTest.handCardCompareToSampleTest" />
+        <item itemvalue="JUnit.All in MahJong_Help_Server" />
+        <item itemvalue="JUnit.SampleTest.sampleReadTest" />
+        <item itemvalue="JUnit.SampleTest" />
         <item itemvalue="JUnit.mahjing.TestSerach" />
-        <item itemvalue="JUnit.matchTest.TestMatch" />
       </list>
     </recent_temporary>
   </component>
@@ -566,32 +578,11 @@
       <workItem from="1544334136847" duration="37715000" />
       <workItem from="1544691881439" duration="7570000" />
       <workItem from="1544802571386" duration="25619000" />
-      <workItem from="1544939757342" duration="8367000" />
+      <workItem from="1544939757342" duration="9394000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SampleTest - 2018.12.16 at 15h 49m 23s.xml">
-      <configuration name="SampleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SampleTest_sampleReadTest - 2018.12.16 at 15h 49m 31s.xml">
-      <configuration name="SampleTest.sampleReadTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SampleTest_sampleReadTest - 2018.12.16 at 15h 51m 10s.xml">
-      <configuration name="SampleTest.sampleReadTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SampleTest - 2018.12.16 at 16h 09m 33s.xml">
-      <configuration name="SampleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SampleTest - 2018.12.16 at 16h 11m 11s.xml">
-      <configuration name="SampleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SampleTest - 2018.12.16 at 16h 12m 37s.xml">
-      <configuration name="SampleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SampleTest - 2018.12.16 at 16h 13m 22s.xml">
-      <configuration name="SampleTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SampleTest - 2018.12.16 at 16h 14m 01s.xml">
       <configuration name="SampleTest" configurationId="JUnit" />
     </history-entry>
@@ -601,9 +592,30 @@
     <history-entry file="SampleTest_sampleReadTest - 2018.12.16 at 16h 15m 08s.xml">
       <configuration name="SampleTest.sampleReadTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SampleTest - 2018.12.16 at 16h 16m 17s.xml">
+      <configuration name="SampleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SampleTest_sampleReadTest - 2018.12.16 at 16h 21m 28s.xml">
+      <configuration name="SampleTest.sampleReadTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_MahJong_Help_Server - 2018.12.16 at 16h 21m 42s.xml">
+      <configuration name="All in MahJong_Help_Server" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HandCardTest_handCardCompareToSampleTest - 2018.12.16 at 16h 26m 51s.xml">
+      <configuration name="HandCardTest.handCardCompareToSampleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HandCardTest_handCardCompareToSampleTest - 2018.12.16 at 16h 28m 22s.xml">
+      <configuration name="HandCardTest.handCardCompareToSampleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HandCardTest_handCardCompareToSampleTest - 2018.12.16 at 16h 29m 25s.xml">
+      <configuration name="HandCardTest.handCardCompareToSampleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HandCardTest_handCardCompareToSampleTest - 2018.12.16 at 16h 32m 30s.xml">
+      <configuration name="HandCardTest.handCardCompareToSampleTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79271000" />
+    <option name="totallyTimeSpent" value="80298000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -618,8 +630,8 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299748" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32899022" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3995657" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32899022" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3995657" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -683,18 +695,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/processUtility/Cutup.java</url>
-          <line>30</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/processUtility/ImgToBufImg.java</url>
-          <line>20</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/mahjong/majing.java</url>
           <line>89</line>
           <properties />
@@ -707,28 +707,10 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/processUtility/Cutup.java</url>
-          <line>36</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/data/Sample.java</url>
-          <line>50</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/mahjongFactory/MahjongFactory.java</url>
           <line>28</line>
           <properties />
           <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/data/Sample.java</url>
-          <line>44</line>
-          <properties />
-          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -860,37 +842,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/compare/FindFeaturePointStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="135" column="111" lean-forward="true" selection-start-line="135" selection-start-column="111" selection-end-line="135" selection-end-column="111" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#900#901#0" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/processUtility/Cutup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MatImage1.jpg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/data/HandCardTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="57" lean-forward="true" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/test_data/server.bmp">
       <provider selected="true" editor-type-id="images" />
@@ -898,7 +851,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/matchTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
-          <caret line="21" column="97" lean-forward="true" selection-start-line="21" selection-start-column="97" selection-end-line="21" selection-end-column="97" />
+          <caret line="21" column="97" selection-start-line="21" selection-start-column="97" selection-end-line="21" selection-end-column="97" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -908,28 +861,8 @@
     <entry file="file://$PROJECT_DIR$/MatImage0.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server.bmp">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/data/HandCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/compare/MatchTempleteStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -943,23 +876,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/processUtility/ImgToBufImg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/processUtility/ImagePathToMat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -967,10 +883,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/data/MahjongCard.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/processUtility/ImagePathToMat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="285">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/data/SampleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="72" lean-forward="true" selection-start-line="18" selection-start-column="72" selection-end-line="18" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/processUtility/ImgToBufImg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/data/Sample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
           <caret line="50" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/processUtility/Cutup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
@@ -992,20 +945,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/data/Sample.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/data/MahjongCard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="44" column="63" selection-start-line="44" selection-start-column="63" selection-end-line="44" selection-end-column="63" />
+        <state relative-caret-position="585">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/data/HandCardTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/data/SampleTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/compare/FindFeaturePointStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        <state relative-caret-position="189">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#963#964#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/data/HandCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="59" column="39" lean-forward="true" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="662">
+          <caret line="64" column="58" selection-start-line="64" selection-start-column="58" selection-end-line="64" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
