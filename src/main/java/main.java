@@ -1,22 +1,18 @@
 
 import java.awt.*;
 import java.io.*;
-import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
 
 import com.client.SendObject;
 import org.opencv.core.Core;
-import org.opencv.core.CvType;
 import org.opencv.core.Mat;
 
 import org.opencv.highgui.Highgui;
-import org.opencv.imgproc.Imgproc;
 import processUtility.Cutup;
-import processUtility.FindFeaturePoint;
-import processUtility.match;
-import sun.applet.Main;
+import processUtility.ImagePathToMat;
+import compare.MatchTempleteStrategy;
 
 import javax.imageio.stream.FileImageOutputStream;
 
@@ -65,6 +61,9 @@ public class main
                     byte2image(data.imgByte,"server.bmp");
                     Image image = Toolkit.getDefaultToolkit().getImage("server.bmp");
                     imageMat = cutup.cutImage(image,1,Integer.parseInt(data.divnum));
+                    MatchTempleteStrategy m =new MatchTempleteStrategy();
+                    ImagePathToMat.readMatImage("6ss.jpg");
+                    //m.matchImg(ImagePathToMat.readMatImage("6ss.JPG"),ImagePathToMat.readMatImage("MatImage7.jpg"));
                     matListToImage(imageMat);
                 } catch (ClassNotFoundException e) {
                     e.printStackTrace();

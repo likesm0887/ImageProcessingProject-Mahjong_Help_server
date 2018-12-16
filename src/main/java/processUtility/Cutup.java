@@ -35,16 +35,16 @@ public class Cutup {
         int cutHeight = height / rows;
         int changeX = width / cols;
         int changeY = height;
-
-        if (width > 2000) {
-            width = 1000;
-            height = bi.getHeight() * 1000 / bi.getWidth();
+/*
+        if (width < 8000) {
+            width = 437*cols;
+           // height = bi.getHeight() * 100*cols / bi.getWidth();
             image = image.getScaledInstance(width, height, Image.SCALE_SMOOTH);//缩小
             cutWidth = width / cols;
             cutHeight = height / rows;
             changeX = width / cols;
             changeY = height;
-        }
+        }*/
 
         Image[][] images = new Image[rows][cols];
         for (int i = 0; i < rows; i++) {
