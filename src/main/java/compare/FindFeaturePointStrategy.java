@@ -31,11 +31,11 @@ public class FindFeaturePointStrategy implements CompareStrategy{
     public boolean isMatch=false;
 
     @Override
-    public void compare(Mat templateImage, Mat originalImage) {
-        matchImage(templateImage, originalImage);
+    public boolean compare(Mat templateImage, Mat originalImage) {
+       return  matchImage(templateImage, originalImage);
     }
 
-    public void matchImage(Mat templateImage, Mat originalImage) {
+    public boolean matchImage(Mat templateImage, Mat originalImage) {
         MatOfKeyPoint templateKeyPoints = new MatOfKeyPoint();
         //指定特征点算法SURF
         FeatureDetector featureDetector = FeatureDetector.create(FeatureDetector.SURF);
@@ -129,7 +129,7 @@ public class FindFeaturePointStrategy implements CompareStrategy{
             //Highgui.imwrite("C:\\Users\\user\\Documents\\MahJong_Help_Server\\ORIGIN.jpg", subMat);
 
             //将匹配的图像用用四条线框出来
-            Core.rectangle(originalImage, new Point(pointA), new Point(pointC) , new Scalar(255, 255, 255),-1);
+            Core.rectangle(originalImage, new Point(pointA), new Point(pointC) , new Scalar(255, 255, 255),1);
             /*Core.line(originalImage, new Point(pointA), new Point(pointB), new Scalar(0, 255, 0), 4);//上 A->B
             Core.line(originalImage, new Point(pointB), new Point(pointC), new Scalar(0, 255, 0), 4);//右 B->C
             Core.line(originalImage, new Point(pointC), new Point(pointD), new Scalar(0, 255, 0), 4);//下 C->D
@@ -142,15 +142,16 @@ public class FindFeaturePointStrategy implements CompareStrategy{
 
             Highgui.imwrite("C:\\Users\\user\\Documents\\MahJong_Help_Server\\PROCESS"+count+".jpg", matchOutput);
             Highgui.imwrite("C:\\Users\\user\\Documents\\MahJong_Help_Server\\POINT"+count+".jpg", originalImage);
-
-            isMatch=true;
             count++;
+            Highgui.imwrite("C:\\Users\\user\\Documents\\MahJong_Help_Server\\feature.jpg", outputImage);
+            return true;
+
         } else {
             System.out.println("模板图不在原图中！");
-            isMatch =false;
+            return false;
         }
 
-        Highgui.imwrite("C:\\Users\\user\\Documents\\MahJong_Help_Server\\feature.jpg", outputImage);
+
     }
 
 

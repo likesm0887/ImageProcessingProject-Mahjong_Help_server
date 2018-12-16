@@ -16,7 +16,7 @@ public class MahjongFactory {
     //輸入數值List和PicList 產生objectList
     public ArrayList<MahjongCard> create(List<String> valueList ,List<Mat>  pic)
     {
-        ArrayList<MahjongCard> mahjongCards = null;
+        ArrayList<MahjongCard> mahjongCards = new ArrayList<>();
         if(valueList.size()!=pic.size())
         {
             System.out.println("數值與數量不符合");

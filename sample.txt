@@ -16,15 +16,6 @@
 7¸U,7W,7W.jpg
 8¸U,8W,8W.jpg
 9¸U,9W,9W.jpg
-1¯Á,1S,1S.jpg
-2¯Á,2S,2S.jpg
-3¯Á,3S,3S.jpg
-4¯Á,4S,4S.jpg
-5¯Á,5S,5S.jpg
-6¯Á,6S,6S.jpg
-7¯Á,7S,7S.jpg
-8¯Á,8S,8S.jpg
-9¯Á,9S,9S.jpg
 1µ©,1O,1O.jpg
 2µ©,2O,2O.jpg
 3µ©,3O,3O.jpg

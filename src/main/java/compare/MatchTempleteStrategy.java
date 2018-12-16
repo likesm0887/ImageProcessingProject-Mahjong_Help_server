@@ -7,11 +7,11 @@ import org.opencv.imgproc.Imgproc;
 public class MatchTempleteStrategy implements CompareStrategy{
     static int count=0;
     @Override
-    public void compare(Mat templateImage, Mat originalImage)
+    public boolean compare(Mat templateImage, Mat originalImage)
     {
-        matchImg(templateImage,originalImage);
+        return matchImg(templateImage,originalImage);
     }
-    public  void matchImg(Mat template, Mat source)
+    public  boolean matchImg(Mat template, Mat source)
     {
         //將文檔讀入為OpenCV的Mat格式
         //創建於原圖相同的大小，儲存匹配度
@@ -29,9 +29,10 @@ public class MatchTempleteStrategy implements CompareStrategy{
            Core.rectangle(source, matchLoc, new Point(matchLoc.x -20 + template.width(), matchLoc.y-20 + template.height()), new Scalar(0, 255, 0),1);
 
            Highgui.imwrite("C:\\Users\\user\\Documents\\MahJong_Help_Server\\"+count+".jpg", source);
+           return true;
        }catch (Exception e)
        {
-           return;
+           return false;
        }
 
 
