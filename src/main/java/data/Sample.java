@@ -16,16 +16,9 @@ public class Sample {
     }
     public ArrayList<String>mahjongCardsForString  =new ArrayList<>();
     public ArrayList<MahjongCard>mahjongCardsSample  =new ArrayList<>();
-    private ArrayList<Mat>mahjongCardsPic  =new ArrayList<>();
-    private List<MahjongCard>mahjongCards;
-    private void readPic()
-    {
-        for(int i =0;i<34;i++)
-        {
-           // ImagePathToMat()
-        }
-    }
-    private void readTxt() throws IOException {
+    public ArrayList<Mat>mahjongPic  =new ArrayList<>();
+
+    protected void readTxt() throws IOException {
         BufferedReader br =  new BufferedReader(new InputStreamReader(new FileInputStream("sample.txt"),"big5"));
         while (br.ready()) {
             try {
@@ -38,17 +31,21 @@ public class Sample {
         }
         br.close();
     }
-    private void spliteMahjongCardsTempForString(String readString)
+    protected void spliteMahjongCardsTempForString(String readString)
     {
         mahjongCardsForString.add(readString.split(",")[1]);
         String imgPath=readString.split(",")[2];
-        mahjongCardsPic.add(ImagePathToMat.readMatImage(imgPath));
+        mahjongPic.add(ImagePathToMat.readMatImage("sample/Feature_point/"+imgPath));
     }
     //Todo create mat in factory
-    private   void createSample()
+    protected   void createSample()
     {
         MahjongFactory mf = new MahjongFactory();
-        mahjongCardsSample=mf.create(mahjongCardsForString,mahjongCardsPic);
+        mahjongCardsSample=mf.create(mahjongCardsForString,mahjongPic);
+    }
+    protected  ArrayList<MahjongCard>GetMahjongCardsSample()
+    {
+        return mahjongCardsSample;
     }
 
 }
