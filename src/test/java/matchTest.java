@@ -17,9 +17,9 @@ public class matchTest {
 
         //m.matchImg( ImagePathToMat.readMatImage("MatImage0.jpg"),ImagePathToMat.readMatImage("MatImage10.jpg"));
 
-       // m.compare(ImagePathToMat.readMatImage("6ss.jpg"),ImagePathToMat.readMatImage("MatImage7.jpg"));
+        //m.compare(ImagePathToMat.readMatImage("sample/feature_point/1W.jpg"),ImagePathToMat.readMatImage("MatImage9.jpg"));
         CompareStrategy ff = new FindFeaturePointStrategy();
-        ff.compare(ImagePathToMat.readMatImage("6ss.jpg"),ImagePathToMat.readMatImage("MatImage4.jpg"));
-        //ff.compare(ImagePathToMat.readMatImage("6ss.jpg"),ImagePathToMat.readMatImage("MatImage12.jpg"));
+        ff.compare(ImagePathToMat.readMatImage("sample/feature_point/1O.jpg"),ImagePathToMat.readMatImage("MatImage0.jpg"));
+       // ff.compare(ImagePathToMat.readMatImage("6ss.jpg"),ImagePathToMat.readMatImage("MatImage12.jpg"));
     }
 }

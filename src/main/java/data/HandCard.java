@@ -6,35 +6,40 @@ import mahjong.IMajong;
 import mahjong.majing;
 import mahjongFactory.MahjongFactory;
 import org.opencv.core.Mat;
+import org.opencv.highgui.Highgui;
 import processUtility.Cutup;
+import processUtility.ImagePathToMat;
 
 import java.awt.*;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HandCard {
+public   class HandCard {
     private final String compareStrategyOption ="";
-    private ArrayList<MahjongCard>handCard;
+    private ArrayList<MahjongCard>handCard =new ArrayList<>();
     private ArrayList<Mat>handCardPic;
     private Sample sample;
-    private ArrayList<String> handCardByString;
+    private ArrayList<String> handCardByString=new ArrayList<>();
     private CompareStrategy compareStrategy ;
-    private MahjongFactory mf;
-    public HandCard(Image img, int divnum) throws IOException
+
+    public  HandCard(Image img, int divnum) throws IOException
     {
         Cutup cutup =new Cutup();
 
         compareStrategy =new FindFeaturePointStrategy();
-        mf=new MahjongFactory();
+        sample=new FeaturePointSample();
+
         handCardPic=cutup.cutImage(img,1,divnum);
-        sample=new Sample();
+        matListToImage(handCardPic);
         handCardCompareToSample();
     }
-
-    public void sethandCard(ArrayList<MahjongCard> hc)
+    public static void matListToImage( ArrayList<Mat> imageMat)
     {
-        this.handCard=hc;
+        for (int i =0;i<imageMat.size();i++)
+        {
+            Highgui.imwrite("MatImage" + i + ".jpg", imageMat.get(i));
+        }
     }
     public ArrayList<MahjongCard> getHandCard()
     {
@@ -42,17 +47,17 @@ public class HandCard {
     }
     private void handCardCompareToSample()
     {
-        for (int i =0 ;i<handCardPic.size();i++)
-        {
-            for(int j =0 ;j<sample.mahjongCardsSample.size();j++)
-            {
-                if(compareStrategy.compare(handCardPic.get(i), sample.mahjongCardsSample.get(i).pic))
-                {
-                    handCard.add(mf.create(sample.mahjongCardsSample.get(i).value,sample.mahjongCardsSample.get(i).pic));
-                    handCardByString.add( sample.mahjongCardsSample.get(i).value);
-                }
-            }
-        }
+        handCard= compareStrategy.compare(sample,handCardPic);
+        setHandCardByString();
+    }
+    private  void setHandCardByString()
+    {
+        for (MahjongCard  mc: handCard)
+        handCardByString.add(mc.value);
+    }
+    public List<String> handCardByString()
+    {
+        return handCardByString;
     }
     public List<String>getListenHard()
     {

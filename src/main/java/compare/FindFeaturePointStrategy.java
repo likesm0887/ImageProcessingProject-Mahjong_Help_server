@@ -1,10 +1,15 @@
 package compare;
 
+import data.MahjongCard;
+import data.Sample;
+import mahjongFactory.MahjongFactory;
 import org.opencv.calib3d.Calib3d;
 import org.opencv.core.*;
 import org.opencv.features2d.*;
 import org.opencv.imgproc.Imgproc;
 import org.opencv.highgui.Highgui;
+
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -31,10 +36,32 @@ public class FindFeaturePointStrategy implements CompareStrategy{
     public boolean isMatch=false;
 
     @Override
-    public boolean compare(Mat templateImage, Mat originalImage) {
-       return  matchImage(templateImage, originalImage);
-    }
+    public ArrayList<MahjongCard>  compare(Sample sample , List< Mat> handCardPic)
+    {
+        ArrayList<MahjongCard> handCard =new ArrayList<>();
+         MahjongFactory mf=new MahjongFactory();
+        for (int i =0 ;i<handCardPic.size();i++)
+        {
+            for(int j =0 ;j<sample.mahjongCardsSample.size();j++)
+            {
+                System.out.println(sample.mahjongCardsSample.get(j).chineseValue);
+                if(matchImage( sample.mahjongCardsSample.get(j).pic,handCardPic.get(i)))
+                {
+                    handCard.add(mf.create(sample.mahjongCardsSample.get(j).value,sample.mahjongCardsSample.get(j).pic));
+                    Highgui.imwrite("output/" + i+"H" + ".jpg",handCardPic.get(i));
+                    Highgui.imwrite("output/" + i + ".jpg",sample.mahjongCardsSample.get(j).pic);
 
+                    break;
+                }
+            }
+        }
+       return handCard;
+    }
+    @Override
+    public boolean compare(Mat templete , Mat Origin)
+    {
+        return matchImage(templete,Origin);
+    }
     public boolean matchImage(Mat templateImage, Mat originalImage) {
         MatOfKeyPoint templateKeyPoints = new MatOfKeyPoint();
         //指定特征点算法SURF
@@ -44,24 +71,24 @@ public class FindFeaturePointStrategy implements CompareStrategy{
         //提取模板图的特征点
         MatOfKeyPoint templateDescriptors = new MatOfKeyPoint();
         DescriptorExtractor descriptorExtractor = DescriptorExtractor.create(DescriptorExtractor.SURF);
-        System.out.println("提取模板图的特征点");
+        System.out.println("提取特徵點");
         descriptorExtractor.compute(templateImage, templateKeyPoints, templateDescriptors);
 
         //显示模板图的特征点图片
         Mat outputImage = new Mat(templateImage.rows(), templateImage.cols(), Highgui.CV_LOAD_IMAGE_COLOR);
-        System.out.println("在图片上显示提取的特征点");
+        System.out.println("在圖片顯示特徵點");
         Features2d.drawKeypoints(templateImage, templateKeyPoints, outputImage, new Scalar(255, 0, 0), 0);
 
         //获取原图的特征点
         MatOfKeyPoint originalKeyPoints = new MatOfKeyPoint();
         MatOfKeyPoint originalDescriptors = new MatOfKeyPoint();
         featureDetector.detect(originalImage, originalKeyPoints);
-        System.out.println("提取原图的特征点");
+        System.out.println("提取原圖特徵點");
         descriptorExtractor.compute(originalImage, originalKeyPoints, originalDescriptors);
 
         List<MatOfDMatch> matches = new LinkedList();
         DescriptorMatcher descriptorMatcher = DescriptorMatcher.create(DescriptorMatcher.FLANNBASED);
-        System.out.println("寻找最佳匹配");
+        System.out.println("尋找最佳匹配");
         /**
          * knnMatch方法的作用就是在给定特征描述集合中寻找最佳匹配
          * 使用KNN-matching算法，令K=2，则每个match得到两个最接近的descriptor，然后计算最接近距离和次接近距离之间的比值，当比值大于既定值时，才作为最终match。
@@ -85,7 +112,7 @@ public class FindFeaturePointStrategy implements CompareStrategy{
         matchesPointCount = goodMatchesList.size();
         //当匹配后的特征点大于等于 4 个，则认为模板图在原图中，该值可以自行调整
         if (matchesPointCount >= 7) {
-            System.out.println("模板图在原图匹配成功！");
+            System.out.println("配對成功");
 
             List<KeyPoint> templateKeyPointList = templateKeyPoints.toList();
             List<KeyPoint> originalKeyPointList = originalKeyPoints.toList();
@@ -147,7 +174,7 @@ public class FindFeaturePointStrategy implements CompareStrategy{
             return true;
 
         } else {
-            System.out.println("模板图不在原图中！");
+            System.out.println("配對失敗");
             return false;
         }
 

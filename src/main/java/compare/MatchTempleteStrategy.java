@@ -1,15 +1,43 @@
 package compare;
 
+import data.MahjongCard;
+import data.Sample;
+import mahjongFactory.MahjongFactory;
 import org.opencv.core.*;
 import org.opencv.highgui.Highgui;
 import org.opencv.imgproc.Imgproc;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MatchTempleteStrategy implements CompareStrategy{
     static int count=0;
+    private MahjongFactory mf;
     @Override
     public boolean compare(Mat templateImage, Mat originalImage)
     {
         return matchImg(templateImage,originalImage);
+    }
+    public ArrayList<MahjongCard>  compare(Sample sample , List< Mat> handCardPic)
+    {
+        ArrayList<MahjongCard> handCard =new ArrayList<>();
+        for (int i =0 ;i<handCardPic.size();i++)
+        {
+            for(int j =0 ;j<sample.mahjongCardsSample.size();j++)
+            {
+                System.out.println(sample.mahjongCardsSample.get(j).chineseValue);
+                if(matchImg( sample.mahjongCardsSample.get(j).pic,handCardPic.get(i)))
+                {
+
+                    handCard.add(mf.create(sample.mahjongCardsSample.get(j).value,sample.mahjongCardsSample.get(j).pic));
+                    Highgui.imwrite("output/" + i+"H" + ".jpg",handCardPic.get(i));
+                    Highgui.imwrite("output/" + i + ".jpg",sample.mahjongCardsSample.get(j).pic);
+
+                    break;
+                }
+            }
+        }
+        return handCard;
     }
     public  boolean matchImg(Mat template, Mat source)
     {
