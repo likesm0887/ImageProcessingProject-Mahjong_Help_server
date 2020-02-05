@@ -105,3 +105,20 @@
         - 驗證集325張
         - 測試集分別為165張
         - Epoch 1000
+    - 訓練過程
+        - ![](https://i.imgur.com/CXUD4Vk.png)
+
+
+### 執行畫面
+
+#### javaFx桌面
+##### 介面
+![](https://i.imgur.com/VkWq1DV.png)
+##### 攝影機拍攝畫面
+![](https://i.imgur.com/KdeaUWj.png)
+##### 計算結果
+![](https://i.imgur.com/niBS9JQ.png)
+
+#### App介面
+
+
